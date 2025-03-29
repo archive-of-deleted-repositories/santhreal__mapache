@@ -16,5 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+pub mod config;
 pub mod meta;
 pub mod repo;
+pub mod snapshot;
