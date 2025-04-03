@@ -26,6 +26,9 @@ use backup::{cli, cmd};
 fn run(args: &Cli) -> Result<()> {
     match &args.command {
         cli::Command::Init(cmd_args) => cmd::init::run(&args.global_args, cmd_args),
+        cli::Command::Log(cmd_args) => cmd::log::run(&args.global_args, cmd_args),
+        cli::Command::Commit(cmd_args) => cmd::commit::run(&args.global_args, cmd_args),
+        cli::Command::Restore(cmd_args) => cmd::restore::run(&args.global_args, cmd_args),
     }
 }
 
