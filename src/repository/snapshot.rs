@@ -22,7 +22,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::utils::hashing::{Hash, Hashable};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Snapshot {
     /// The snapshot timestamp is the UTC time at which the snapshot was created
     pub timestamp: DateTime<Utc>,
