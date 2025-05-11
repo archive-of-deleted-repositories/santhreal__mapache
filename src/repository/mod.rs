@@ -15,9 +15,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 pub mod backend;
-pub mod committer;
 pub mod config;
+
 pub mod repository_v1;
 pub mod snapshot;
-pub mod storage;
 pub mod tree;
