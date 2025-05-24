@@ -19,7 +19,7 @@ use std::path::PathBuf;
 use chrono::{DateTime, Local};
 use serde::{Deserialize, Serialize};
 
-use super::SnapshotId;
+use super::ID;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Snapshot {
@@ -27,7 +27,7 @@ pub struct Snapshot {
     pub timestamp: DateTime<Local>,
 
     /// Hash ID for the tree object root.
-    pub tree: SnapshotId,
+    pub tree: ID,
 
     /// Snapshot size in bytes
     pub size: u64,
