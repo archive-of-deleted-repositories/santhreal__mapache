@@ -17,6 +17,7 @@
 pub mod gc;
 pub mod index;
 pub mod keys;
+pub mod lock;
 pub mod manifest;
 pub mod packer;
 pub mod repo;
